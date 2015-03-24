@@ -1,0 +1,419 @@
+#gsheader #gsTopMenu .user ul, #gsheader #gsTopMenu ul, #leftNavi ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none
+}
+
+body {
+	overflow: hidden
+}
+
+#gsLayout {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0
+}
+
+#gsLayout #gsSidebar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 160px;
+	overflow: hidden;
+	transition: left .3s ease
+}
+
+#gsLayout #gsMainpage {
+	position: absolute;
+	left: 160px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	transition: left .3s ease
+}
+
+#gsLayout #gsMainpage #gsheader {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background: #28303b
+}
+
+#gsLayout #gsMainpage #gsBody {
+	position: absolute;
+	z-index: 1;
+	top: 40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden
+}
+
+#gsLayout #gsMainpage #gsBody iframe {
+	border: 0;
+	width: 100%;
+	height: 100%
+}
+
+#gsLayout.closed #gsSidebar {
+	left: -160px
+}
+
+#gsLayout.closed #gsMainpage {
+	left: 0
+}
+
+@media ( max-width : 420px) {
+	body {
+		overflow: hidden
+	}
+	#gsLayout {
+		-webkit-transition: -webkit-transform .3s ease
+	}
+	#gsLayout #gsSidebar {
+		width: 260px;
+		left: -260px
+	}
+	#gsLayout #gsMainpage {
+		left: 0
+	}
+	#gsLayout.closed {
+		-webkit-transform: translateX(260px)
+	}
+	#gsLayout.closed #gsSidebar {
+		left: -260px
+	}
+	#gsLayout.closed:after {
+		content: '';
+		position: absolute;
+		z-index: 99999;
+		top: 40px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.6)
+	}
+}
+
+#gsheader {
+	color: #a2afc0;
+	line-height: 40px;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5)
+}
+
+#gsheader #gsToggleSidebar {
+	font-size: 18px;
+	float: left;
+	width: 40px;
+	text-align: center;
+	cursor: pointer
+}
+
+#gsheader #gsToggleSidebar:hover {
+	background: #2aabd2;
+	color: #fff
+}
+
+#gsheader #gsTopMenu {
+	float: right
+}
+
+#gsheader #gsTopMenu .user {
+	float: left;
+	padding: 0 8px;
+	font-size: 13px;
+	position: relative
+}
+
+#gsheader #gsTopMenu .user img {
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	border: solid 2px #fff;
+	display: inline-block;
+	margin-right: 8px
+}
+
+#gsheader #gsTopMenu .user ul {
+	display: none;
+	position: absolute;
+	float: none;
+	background: #28303b;
+	width: 100%;
+	border: solid 1px #ccc;
+	top: 40px;
+	border-top: 0
+}
+
+#gsheader #gsTopMenu .user ul li {
+	line-height: 30px;
+	float: none
+}
+
+#gsheader #gsTopMenu .user ul li a {
+	font-size: 13px;
+	float: none;
+	display: block;
+	width: auto;
+	text-align: left;
+	padding: 0 10px
+}
+
+#gsheader #gsTopMenu .user ul li.quit a:hover {
+	background: #c12e2a
+}
+
+#gsheader #gsTopMenu .user:hover ul {
+	display: block
+}
+
+#gsheader #gsTopMenu ul {
+	float: left
+}
+
+#gsheader #gsTopMenu li {
+	float: left
+}
+
+#gsheader #gsTopMenu li a {
+	float: left;
+	color: #a2afc0;
+	width: 40px;
+	text-align: center;
+	font-size: 18px
+}
+
+#gsheader #gsTopMenu li a:hover {
+	background: #2aabd2;
+	color: #fff
+}
+
+#gsheader #gsTopMenu li.msg {
+	position: relative
+}
+
+#gsheader #gsTopMenu li.msg .num {
+	position: absolute;
+	background: red;
+	top: 2px;
+	right: 2px;
+	font-size: 10px;
+	height: 18px;
+	width: 18px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50%;
+	color: #fff
+}
+
+@media ( max-width : 420px) {
+	#gsheader .user {
+		display: none
+	}
+	#gsheader #gsTopMenu .home {
+		display: none
+	}
+}
+
+#gsSidebar {
+	background: #28303b;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 90%,
+		rgba(0, 0, 0, 0.2) 100%)
+}
+
+#gsSidebar .home {
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+	line-height: 30px;
+	width: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #c0c9d5;
+	display: none
+}
+
+#gsSidebar .logo {
+	line-height: 60px;
+	padding: 0 10px;
+	font-size: 1.2em;
+	color: #c0c9d5
+}
+
+#gsSidebar .logo img {
+	display: inline-block;
+	width: 28px;
+	height: 30px
+}
+
+#gsSidebar .logo:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	border-top: solid 1px #1e242c;
+	border-bottom: solid 1px #323c4a
+}
+
+#gsSidebar .user {
+	padding: 10px;
+	display: none
+}
+
+#gsSidebar .user .gravatar {
+	float: left;
+	border-radius: 50%;
+	border: solid 3px #fff
+}
+
+#gsSidebar .user .gravatar img {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px
+}
+
+#gsSidebar .user .name {
+	float: left;
+	height: 60px;
+	padding-left: 10px;
+	line-height: 25px;
+	margin-top: 10px;
+	color: #c0c9d5
+}
+
+#gsSidebar .user .name .t {
+	display: block;
+	color: #c0c9d5
+}
+
+#gsSidebar .user .name .quit {
+	display: inline-block;
+	margin-left: 30px;
+	color: #c12e2a
+}
+
+#gsSidebar .user .name .msg {
+	color: #c0c9d5
+}
+
+#leftNavi {
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	user-select: none;
+	-webkit-user-select: none
+}
+
+#leftNavi::-webkit-scrollbar {
+	display: none
+}
+
+#leftNavi>ul>li .t {
+	cursor: pointer;
+	line-height: 35px;
+	padding: 0 10px;
+	color: #a2afc0
+}
+
+#leftNavi>ul>li .t i {
+	display: inline-block;
+	opacity: 0.5;
+	width: 30px;
+	text-align: center
+}
+
+#leftNavi>ul>li .t:before {
+	-webkit-transition: -webkit-transform .3s ease;
+	transition: -webkit-transform .3s ease;
+	content: '\f105';
+	font-family: fontAwesome;
+	float: right;
+	text-shadow: none;
+	opacity: 0.3
+}
+
+#leftNavi>ul>li .t:hover {
+	background: #222932;
+	color: #fff
+}
+
+#leftNavi>ul>li ul.sub {
+	-webkit-transition: max-height .3s ease;
+	transition: max-height .3s ease;
+	max-height: 0px;
+	background: #222932;
+	overflow: hidden
+}
+
+#leftNavi>ul>li ul.sub li {
+	position: relative
+}
+
+#leftNavi>ul>li ul.sub li a {
+	font-size: 13px;
+	display: block;
+	color: #a2afc0;
+	padding: 0 10px 0 20px;
+	line-height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+#leftNavi>ul>li ul.sub li a:hover {
+	background: rgba(0, 0, 0, 0.1);
+	color: #fff
+}
+
+#leftNavi>ul>li ul.sub li.active {
+	background: #2aabd2
+}
+
+#leftNavi>ul>li ul.sub li.active a {
+	color: #fff
+}
+
+#leftNavi>ul>li.active ul.sub {
+	max-height: 2000px;
+	padding: 10px 0
+}
+
+#leftNavi>ul>li.active .t {
+	color: #fff;
+	background: #1e242c
+}
+
+#leftNavi>ul>li.active .t:before {
+	-webkit-transform: rotate(90deg);
+	opacity: 1
+}
+
+#leftNavi a[href^='#'] {
+	color: red !important
+}
+
+@media ( max-width : 420px) {
+	#gsSidebar .user {
+		display: block
+	}
+	#gsSidebar .home {
+		display: block
+	}
+	#leftNavi {
+		top: 150px
+	}
+}

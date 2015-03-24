@@ -1,0 +1,407 @@
+.text-default {
+	color: #ccc
+}
+
+.text-primary {
+	color: #2d6ca2
+}
+
+.text-success {
+	color: #419641
+}
+
+.text-success-light {
+	color: #dff0d8
+}
+
+.text-info {
+	color: #2aabd2
+}
+
+.text-info-light {
+	color: d9edf7
+}
+
+.text-warning {
+	color: #eb9316;
+	color: #fc9526
+}
+
+.text-danger {
+	color: #c12e2a
+}
+
+.text-danger-light {
+	color: #f2dede
+}
+
+.text-link {
+	color: #428bca
+}
+
+.text-meta {
+	color: #999
+}
+
+.text-inverse {
+	color: #333
+}
+
+.text-purple {
+	color: purple
+}
+
+.text-grey {
+	color: #ccc
+}
+
+.bk-primary {
+	background-color: #2d6ca2;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-primary a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-success {
+	background-color: #419641;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-success a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-success-light {
+	background-color: #dff0d8;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-success-light a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-info {
+	background-color: #2aabd2;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-info a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-info-light {
+	background-color: d9edf7;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-info-light a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-warning {
+	background-color: #eb9316;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-warning a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-danger {
+	background-color: #c12e2a;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-danger a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-danger-light {
+	background-color: #f2dede;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-danger-light a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-link {
+	background-color: #428bca;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-link a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-meta {
+	background-color: #999;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-meta a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-inverse {
+	background-color: #333;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-inverse a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-purple {
+	background-color: purple;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-purple a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.flot ul.pk, .gsGantt ul.phases, .gsGantt ul.timeline {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+h4 {
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 8px;
+	margin-bottom: 8px
+}
+
+.flot {
+	height: 100px;
+	position: relative
+}
+
+.flot .pie {
+	height: 100px;
+	float: left;
+	width: 100px
+}
+
+.flot .percent {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 1.3em
+}
+
+.flot .percent:after {
+	content: '%'
+}
+
+.flot ul.pk {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px
+}
+
+.flot ul.pk li {
+	line-height: 30px
+}
+
+.flot ul.pk li .num {
+	display: inline-block;
+	margin-left: 8px
+}
+
+.gsGantt {
+	position: relative;
+	margin: 0 35px;
+	margin-top: 15px
+}
+
+.gsGantt .bar {
+	height: 8px;
+	background: #ccc;
+	box-shadow: inset 1px red;
+	border-radius: 4px;
+	top: 0;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1),
+		transparent);
+	position: absolute;
+	width: 100%
+}
+
+.gsGantt .bar .indi {
+	width: 0;
+	position: absolute;
+	height: 8px;
+	border-radius: 4px;
+	background: #c12e2a;
+	transition: width .3s ease
+}
+
+.gsGantt .plan {
+	position: absolute;
+	border-left: solid 1px #c12e2a;
+	height: 12px;
+	top: -12px
+}
+
+.gsGantt .plan:before {
+	content: '';
+	width: 10px;
+	height: 7px;
+	background: #c12e2a;
+	position: absolute
+}
+
+.gsGantt .start, .gsGantt .end {
+	position: absolute;
+	font-size: 13px;
+	top: 0;
+	margin-top: -31px;
+	color: #999;
+	display: none;
+	line-height: 25px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	width: 86px;
+	border-radius: 4px;
+	color: #fff
+}
+
+.gsGantt .start:before, .gsGantt .end:before {
+	content: '';
+	position: absolute;
+	border: solid 6px rgba(0, 0, 0, 0.7);
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom: 0;
+	bottom: 0;
+	margin-bottom: -6px;
+	left: 50%;
+	margin-left: -6px
+}
+
+.gsGantt .start {
+	left: 0;
+	margin-left: -43px
+}
+
+.gsGantt .end {
+	right: 0;
+	margin-right: -43px
+}
+
+.gsGantt .total {
+	position: relative;
+	height: 45px;
+	width: 100%
+}
+
+.gsGantt ul.phases li {
+	position: relative;
+	height: 45px
+}
+
+.gsGantt ul.phases li:hover .start, .gsGantt ul.phases li:hover .end {
+	display: block
+}
+
+.gsGantt .success .bar .indi {
+	background: #419641
+}
+
+.gsGantt .success .plan {
+	border-left-color: #419641
+}
+
+.gsGantt .success .plan:before {
+	background: #419641
+}
+
+.gsGantt .today {
+	position: absolute;
+	left: 20px;
+	width: 0p;
+	border-left: dotted 2px #ccc;
+	height: 100%
+}
+
+.gsGantt .today:before {
+	content: '今天';
+	color: #999
+}
+
+.gsGantt .t {
+	padding-left: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-top: 8px
+}
+
+.gsGantt ul.timeline {
+	height: 25px
+}
+
+.gsGantt ul.timeline li {
+	position: absolute
+}
+
+.gsGantt ul.timeline li .date {
+	width: 70px;
+	position: absolute;
+	margin-left: -35px;
+	left: 50%;
+	top: 0;
+	background: #fff;
+	text-align: center;
+	font-size: 13px;
+	color: #999
+}
+
+#tasks h4 {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	text-align: center
+}
+
+#tasks .prev {
+	float: left
+}
+
+#tasks .next {
+	float: right
+}
+
+#tasks .prev, #tasks .next {
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #999
+}
+
+#tasks .prev:hover, #tasks .next:hover {
+	color: #fff;
+	background: #428bca
+}

@@ -1,0 +1,240 @@
+.text-default {
+	color: rgb(204, 204, 204);
+}
+.text-primary {
+	color: rgb(45, 108, 162);
+}
+.text-success {
+	color: rgb(65, 150, 65);
+}
+.text-success-light {
+	color: rgb(223, 240, 216);
+}
+.text-info {
+	color: rgb(42, 171, 210);
+}
+.text-info-light {
+	
+}
+.text-warning {
+	color: rgb(252, 149, 38);
+}
+.text-danger {
+	color: rgb(193, 46, 42);
+}
+.text-danger-light {
+	color: rgb(242, 222, 222);
+}
+.text-link {
+	color: rgb(66, 139, 202);
+}
+.text-meta {
+	color: rgb(153, 153, 153);
+}
+.text-inverse {
+	color: rgb(51, 51, 51);
+}
+.text-purple {
+	color: purple;
+}
+.text-grey {
+	color: rgb(204, 204, 204);
+}
+.bk-primary {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(45, 108, 162);
+}
+.bk-primary a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-success {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(65, 150, 65);
+}
+.bk-success a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-success-light {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(223, 240, 216);
+}
+.bk-success-light a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-info {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(42, 171, 210);
+}
+.bk-info a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-info-light {
+	color: rgba(255, 255, 255, 0.8);
+}
+.bk-info-light a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-warning {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(235, 147, 22);
+}
+.bk-warning a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-danger {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(193, 46, 42);
+}
+.bk-danger a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-danger-light {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(242, 222, 222);
+}
+.bk-danger-light a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-link {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(66, 139, 202);
+}
+.bk-link a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-meta {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(153, 153, 153);
+}
+.bk-meta a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-inverse {
+	color: rgba(255, 255, 255, 0.8); background-color: rgb(51, 51, 51);
+}
+.bk-inverse a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.bk-purple {
+	color: rgba(255, 255, 255, 0.8); background-color: purple;
+}
+.bk-purple a {
+	color: rgba(255, 255, 255, 0.8); text-decoration: none;
+}
+.flot ul.pk {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.gsGantt ul.phases {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.gsGantt ul.timeline {
+	list-style: none; margin: 0px; padding: 0px;
+}
+h4 {
+	padding-bottom: 8px; margin-bottom: 8px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.flot {
+	height: 100px; position: relative;
+}
+.flot .pie {
+	width: 100px; height: 100px; float: left;
+}
+.flot .percent {
+	left: 0px; top: 0px; width: 100px; height: 100px; text-align: center; line-height: 100px; font-size: 1.3em; position: absolute;
+}
+.flot .percent::after {
+	content: "%";
+}
+.flot ul.pk {
+	margin-top: 20px; margin-left: 10px; float: left;
+}
+.flot ul.pk li {
+	line-height: 30px;
+}
+.flot ul.pk li .num {
+	margin-left: 8px; display: inline-block;
+}
+.gsGantt {
+	margin: 15px 35px 0px; position: relative;
+}
+.gsGantt .bar {
+	background: rgb(204, 204, 204); border-radius: 4px; top: 0px; width: 100%; height: 8px; position: absolute; box-shadow: none;
+}
+.gsGantt .bar .indi {
+	background: rgb(193, 46, 42); border-radius: 4px; width: 0px; height: 8px; position: absolute; transition: width .3s ease;
+}
+.gsGantt .plan {
+	top: -12px; height: 12px; border-left-color: rgb(193, 46, 42); border-left-width: 1px; border-left-style: solid; position: absolute;
+}
+.gsGantt .plan::before {
+	background: rgb(193, 46, 42); width: 10px; height: 7px; position: absolute; content: "";
+}
+.gsGantt .start {
+	background: rgba(0, 0, 0, 0.7); border-radius: 4px; top: 0px; width: 86px; text-align: center; color: rgb(255, 255, 255); line-height: 25px; font-size: 13px; margin-top: -31px; display: none; position: absolute;
+}
+.gsGantt .end {
+	background: rgba(0, 0, 0, 0.7); border-radius: 4px; top: 0px; width: 86px; text-align: center; color: rgb(255, 255, 255); line-height: 25px; font-size: 13px; margin-top: -31px; display: none; position: absolute;
+}
+.gsGantt .start::before {
+	border-width: 6px 6px 0px; border-style: solid solid none; border-color: rgba(0, 0, 0, 0.7) transparent currentColor; left: 50%; bottom: 0px; margin-bottom: -6px; margin-left: -6px; position: absolute; content: "";
+}
+.gsGantt .end::before {
+	border-width: 6px 6px 0px; border-style: solid solid none; border-color: rgba(0, 0, 0, 0.7) transparent currentColor; left: 50%; bottom: 0px; margin-bottom: -6px; margin-left: -6px; position: absolute; content: "";
+}
+.gsGantt .start {
+	left: 0px; margin-left: -43px;
+}
+.gsGantt .end {
+	right: 0px; margin-right: -43px;
+}
+.gsGantt .total {
+	width: 100%; height: 45px; position: relative;
+}
+.gsGantt ul.phases li {
+	height: 45px; position: relative;
+}
+.gsGantt ul.phases li:hover .start {
+	display: block;
+}
+.gsGantt ul.phases li:hover .end {
+	display: block;
+}
+.gsGantt .success .bar .indi {
+	background: rgb(65, 150, 65);
+}
+.gsGantt .success .plan {
+	border-left-color: rgb(65, 150, 65);
+}
+.gsGantt .success .plan::before {
+	background: rgb(65, 150, 65);
+}
+.gsGantt .today {
+	left: 20px; height: 100%; border-left-color: rgb(204, 204, 204); border-left-width: 2px; border-left-style: dotted; position: absolute;
+}
+.gsGantt .today::before {
+	color: rgb(153, 153, 153); content: "½ñÌì";
+}
+.gsGantt .t {
+	overflow: hidden; padding-top: 8px; padding-left: 5px; white-space: nowrap; text-overflow: ellipsis;
+}
+.gsGantt ul.timeline {
+	height: 25px;
+}
+.gsGantt ul.timeline li {
+	position: absolute;
+}
+.gsGantt ul.timeline li .date {
+	background: rgb(255, 255, 255); left: 50%; top: 0px; width: 70px; text-align: center; color: rgb(153, 153, 153); font-size: 13px; margin-left: -35px; position: absolute;
+}
+#tasks h4 {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-align: center; line-height: 40px;
+}
+#tasks .prev {
+	float: left;
+}
+#tasks .next {
+	float: right;
+}
+#tasks .prev {
+	width: 40px; text-align: center; color: rgb(153, 153, 153); line-height: 40px; font-size: 1.4em; cursor: pointer;
+}
+#tasks .next {
+	width: 40px; text-align: center; color: rgb(153, 153, 153); line-height: 40px; font-size: 1.4em; cursor: pointer;
+}
+#tasks .prev:hover {
+	background: rgb(66, 139, 202); color: rgb(255, 255, 255);
+}
+#tasks .next:hover {
+	background: rgb(66, 139, 202); color: rgb(255, 255, 255);
+}

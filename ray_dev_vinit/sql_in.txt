@@ -1,0 +1,18 @@
+-- T_SYS_NAVITEM#searchid#INSERTE#select * from t_sys_navitem where 1 = 1 #数据;
+--T_APP_PORTALITEM#id#INSERT#select * from t_app_portalitem where 1 = 1 and ccate = 'admin' #数据;
+--T_SYS_ORGAN#id#INSERTE#select * from t_sys_organ where 1 = 1 #数据;
+--T_SYS_SEARCH#searchid#INSERTE#select * from t_sys_search where 1 = 1 and searchname = 'system.organ.user.locateframe' #数据;
+--T_SYS_SEARCHOPTION#searchid#INSERTE#select t.* from t_sys_searchoption t where searchid = (select searchid from t_sys_search where searchname = 'system.organ.user.locateframe')#数据;
+--T_SYS_SEARCHURL#searchid#INSERTE#select t.* from t_sys_searchurl t where searchid = (select searchid from t_sys_search where searchname = 'system.organ.user.locateframe')#数据;
+--T_SYS_SEARCHITEM#searchid#INSERTE#select t.* from t_sys_searchitem t where searchid = (select searchid from t_sys_search where searchname = 'system.organ.user.locateframe')#数据;
+--T_SYS_SEARCHLINK#searchid#INSERTE#select t.* from t_sys_searchlink t where searchid = (select searchid from t_sys_search where searchname = 'system.organ.user.locateframe')#数据;
+
+--T_APP_KNOWLEDGECLASS#id#INSERT#select * from t_app_knowledgeclass where 1 = 1 order by cno#数据;
+
+
+T_SYS_ORGAN#id#INSERTE#select id, cname, shortname, allname, cname, deptname, ctype, ordernum, shortname, parentorganid from t_sys_organ where 1 = 1 order by internal#数据;
+T_SYS_USER#id#INSERTE#select id, loginname, cname, ownerorg, ownerdept, orgname, deptname from t_sys_user where 1 = 1 and loginname in ('zhangy','gaob','yaoyq','xum','limm','ouxy')#数据;
+
+
+
+

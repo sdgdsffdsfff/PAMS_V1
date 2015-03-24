@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* 2012-03-15 by davidguoshuang at gmail.com */
+
+/*reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video,textarea {font:14px/150% '雅黑','宋体',tahoma,verdana,sans-serif;margin:0;padding:0;}
+form {display:inline;}
+ul li {list-style:none;}
+strong {font-weight:700;}
+object {outline:0;}
+hr {border:0;height:0px;border-bottom:solid 1px #ccc;line-height:20px;margin:0;padding:0;margin:10px 0;}
+
+/*layout*/
+html,body {height:100%;}
+html {*overflow-x:hidden;+overflow-y:auto}
+body {padding:0;margin:0;background:#fff;}
+
+a {color:#21759b;text-decoration:none;outline:0;}
+a:hover {color:#F60;}
+a * {_cursor:pointer;}/*fix ie6 elements in a not show hand*/
+
+h1 {font-size:18px;line-height:25px;border-bottom:solid 1px #ccc;text-align:center;margin-bottom:6px;border:0;font-weight:700;}
+
+h2 {margin:5px 0;font-weight:700;border-bottom:solid 1px #ccc;padding:5px 0;}
+h2.noBorder {border:0;}
+h2.centerAlign {background:url(images/line.gif) 0 center repeat-x;height:25px;line-height:25px;border:0;padding:0;text-align:center;padding:0;}
+h2.centerAlign .t {display:inline-block;background:#fff;padding:0 5px;font-weight:700;}
+
+/*portal page*/
+h2.collapsable {background:url(images/line2.gif) 0 center repeat-x;height:25px;line-height:25px;border:0;padding:0;margin:0;}
+h2.chover {background-image:url(images/line.gif);}
+h2 .title,h2 .t {font-size:14px;color:#666;}
+h2.collapsable .t {display:inline-block;background:#fff url(images/collapse.gif) 5px 0 no-repeat;font-size:14px;padding-right:5px;height:25px;line-height:25px;padding-left:20px;cursor:pointer;color:#777;}
+
+h2.blue {background-image:url(images/line-blue.gif) }
+h2.blue .t {color:#06c;font-weight:700;}
+
+#site-nav  {background:#eee;padding:0 3px;border:solid 0px #ccc;}
+#site-nav ul li {display:inline-block;*display:inline;*zoom:1;padding:3px;}
+#site-nav ul li img {vertical-align:middle;cursor:pointer;}
+#site-nav ul li.changetype {cursor:pointer;}
+#site-nav ul li.changetype:hover  {background:#ccc;}
+#site-nav ul li.c,#site-nav ul li.c:hover  {background:#006965;color:#fff;}
+
+.mt10 {margin-top:10px;}
+
+table.repgGrid {width:100%;border-collapse:collapse;}
+table.repgGrid  th {color:#666;}
+table.repgGrid  th,table.repgGrid  td {padding:0 3px;height:30px;text-align:left;}
+table.repgGrid thead tr td {border-bottom:solid 3px #eee;}
+table.repgGrid tbody tr td {border-bottom:dotted 1px #ccc;}
+table.repgGrid  tr th {border-bottom:solid 3px #eee;}
+
+
+.p8 {paddding:8px;}
+tbody.top10 {}
+tbody.morethan10 {display:none;}
+a.top10More {display:inline-block;*display:inline;*zoom:1;}
+table.repgGrid tbody.totalTr tr td {border-top :solid 3px #eee;border-bottom:0;}
+table.repgGrid tbody.totalTr tr.more td {border:0;}
+tr.after10 {display:none;}  
+    
+/*js auto find top10 tr*/
+tr.morethan10 {display:none;}
+
+

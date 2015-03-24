@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="com.pams.gxgl.kpi.jsl.action" extends="default" namespace="/module/pams/gxgl/kpi/jsl">
+		<action name="rep_*" class="com.pams.gxgl.kpi.jsl.action.RepAction" method="{1}">
+			<result name="mainframe" type="freemarker">/com/pams/gxgl/kpi/jsl/view/mainframe.ftl</result>
+			<result name="main_jsl_gs" type="freemarker">/com/pams/gxgl/kpi/jsl/view/main_jsl_gs.ftl</result>
+			<result name="main_jsl_bm" type="freemarker">/com/pams/gxgl/kpi/jsl/view/main_jsl_bm.ftl</result>
+			<result name="main_jsl_ry" type="freemarker">/com/pams/gxgl/kpi/jsl/view/main_jsl_ry.ftl</result>
+			<result name="tab_jsl_gs" type="freemarker">/com/pams/gxgl/kpi/jsl/view/tab_jsl_gs.ftl</result>
+			<result name="tab_jsl_bm" type="freemarker">/com/pams/gxgl/kpi/jsl/view/tab_jsl_bm.ftl</result>
+			<result name="tab_jsl_ry" type="freemarker">/com/pams/gxgl/kpi/jsl/view/tab_jsl_ry.ftl</result>
+	     	<result name="excel" type="stream">
+	     		<param name="contentType">application/vnd.ms-excel</param> 
+            	<param name="inputName">excelStream</param>
+            	<param name="contentDisposition">attachment;filename="${excelFileName}"</param>
+            	<param name="bufferSize">1024</param>
+			</result>							
+		</action>
+	</package>
+</struts>

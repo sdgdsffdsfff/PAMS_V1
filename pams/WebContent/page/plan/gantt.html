@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>计划管理</title>
+    <link rel="stylesheet" href="/pams/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/pams/lib/font-awesome/css/font-awesome.min.css">
+    <link href="../logo60.png" rel="apple-touch-icon">
+    <link href="../logo76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="../logo120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="../logo152.png" rel="apple-touch-icon" sizes="152x152">
+    <link rel="stylesheet" href="/pams/lib/datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/pams/css/animation.css">
+    <link rel="stylesheet" href="/pams/lib/slider.css">
+    <link rel="stylesheet" href="/pams/css/main.css">
+    <script src="/pams/lib/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="/pams/css/gsgantt.css">
+  </head>
+  <body>
+    <div id="container">
+      <script>
+        var projID='123213213';
+        
+      </script>
+      <h1 id="plan_cname_h1"></h1>
+      <div id="infoList" class="row">
+        <div id="plan_cname" class="col-sm-4"></div>
+        <div id="plan_cno" class="col-sm-4"></div>
+        <div id="plan_headerdeptcname" class="col-sm-4"></div>
+        <div id="plan_state" class="col-sm-4"></div>
+        <div id="plan_cost" class="col-sm-4"></div>
+      </div>
+      <h4 style="margin-top:20px;">计划阶段</h4>
+      <div id="gantt"></div>
+      <div class="col-sm-12">
+        <div id="tasks">
+          <h4><i title="以前" class="fa fa-angle-left prev"></i><i title="以后" class="fa fa-angle-right next"></i>最近 <select class="days"><option>10</option><option>20</option><option>30</option></select> 天的任务 （<span class="weekdate"></span>）</h4>
+          <table class="table">
+          </table>
+        </div>
+      </div>
+      
+      <div style="padding-top:20px;" class="row">
+        <div class="col-sm-6">
+          <h4>成本（元）</h4>
+          <div class="flot">
+            <ul class="pk">
+              <li data-num="0">预算成本</li>
+              <li data-num="100">实花金额</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>收款（元）</h4>
+          <div class="flot">
+            <ul class="pk">
+              <li data-num="80000">待收</li>
+              <li data-num="750000">已收</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top:20px;" class="row">
+        <div class="col-sm-6">
+          <h4>完工比</h4>
+          <div class="flot">
+            <div class="percent">80</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>预计毛利率</h4>
+          <div class="flot">
+            <div class="percent">26</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/pams/lib/jquery-ui.min.js"></script>
+    <script src="/pams/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/pams/lib/moment.min.js"></script>
+    <script src="/pams/lib/moment.zh-cn.js"></script>
+    <script src="/pams/lib/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/pams/lib/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="/pams/lib/lodash.min.js"></script>
+    <script src="/pams/lib/bootstrap-slider.js"></script>
+    <script src="/pams/lib/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <script src="/pams/js/main.js"></script>
+    <style>
+      #infoList {
+      	line-height:30px;
+      }
+    </style>
+    <script src="/pams/lib/flot/jquery.flot.min.js"></script>
+    <script src="/pams/lib/flot/jquery.flot.pie.min.js"></script>
+    <script src="/pams/lib/flot/jquery.flot.resize.min.js"></script>
+    
+    <script src="gsgantt.js"></script>
+    
+    
+  </body>
+</html>

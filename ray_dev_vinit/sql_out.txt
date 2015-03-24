@@ -1,0 +1,17 @@
+--  解决问题 9：数据;
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('00000000','山西省电力公司','山西省电力公司', null ,'山西省电力公司', null , null ,'G000','山西省电力公司','R0');
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('000000000001','营销处','营销处','营销部/山西省电力公司','营销处','营销处','DEPT','G000D001','营销处','402881ec282304b80128230fd9b90003');
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('000000000002','财务处','财务处','财务处/山西省电力公司','财务处','财务处','DEPT','G000D002','财务处','402881ec282304b80128230fd9b90003');
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('000000000003','发策处','发策处','发策处/山西省电力公司','发策处','发策处','DEPT','G000D003','发策处','402881ec282304b80128230fd9b90003');
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('000000000004','办公室','办公室','办公室/山西省电力公司','办公室','办公室','DEPT','G000D004','办公室','402881ec282304b80128230fd9b90003');
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('000000000005','监察处','监察处','监察处/山西省电力公司','监察处','监察处','DEPT','G000D005','监察处','402881ec282304b80128230fd9b90003');
+insert into T_SYS_ORGAN(id,cname,shortname,allname,cname,deptname,ctype,ordernum,shortname,parentorganid) values('000000000006','户表办','户表办','户表办/山西省电力公司','户表办','户表办','DEPT','G000D006','户表办','402881ec282304b80128230fd9b90003');
+commit;
+--  解决问题 10：数据;
+insert into T_SYS_USER(id,loginname,cname,ownerorg,ownerdept,orgname,deptname) values('zhangy','zhangy','张瑜','00000000','000000000001','山西省电力公司', null );
+insert into T_SYS_USER(id,loginname,cname,ownerorg,ownerdept,orgname,deptname) values('gaob','gaob','高博','00000000','000000000002','山西省电力公司', null );
+insert into T_SYS_USER(id,loginname,cname,ownerorg,ownerdept,orgname,deptname) values('xum','xum','徐敏','00000000','000000000001','山西省电力公司', null );
+insert into T_SYS_USER(id,loginname,cname,ownerorg,ownerdept,orgname,deptname) values('yaoyq','yaoyq','姚亚强','00000000','000000000002','山西省电力公司', null );
+insert into T_SYS_USER(id,loginname,cname,ownerorg,ownerdept,orgname,deptname) values('ouxy','ouxy','欧晓勇','00000000','000000000001','山西省电力公司', null );
+insert into T_SYS_USER(id,loginname,cname,ownerorg,ownerdept,orgname,deptname) values('limm','limm','李梅梅','00000000','000000000001','山西省电力公司', null );
+commit;

@@ -1,0 +1,2 @@
+T_SYS_ORGAN#id#INSERTE#select id, cname, shortname, allname, parentorganid, ordernum, internal from t_sys_organ where 1 = 1 order by internal#数据;
+T_SYS_USER#id#INSERTE#select id, loginname, cname, ownerorg, ownerdept, orgname, deptname from t_sys_user where 1 = 1#数据;

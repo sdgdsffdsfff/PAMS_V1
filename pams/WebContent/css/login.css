@@ -1,0 +1,298 @@
+.text-default {
+	color: #ccc
+}
+
+.text-primary {
+	color: #2d6ca2
+}
+
+.text-success {
+	color: #419641
+}
+
+.text-success-light {
+	color: #dff0d8
+}
+
+.text-info {
+	color: #2aabd2
+}
+
+.text-info-light {
+	color: d9edf7
+}
+
+.text-warning {
+	color: #eb9316;
+	color: #fc9526
+}
+
+.text-danger {
+	color: #c12e2a
+}
+
+.text-danger-light {
+	color: #f2dede
+}
+
+.text-link {
+	color: #428bca
+}
+
+.text-meta {
+	color: #999
+}
+
+.text-inverse {
+	color: #333
+}
+
+.text-purple {
+	color: purple
+}
+
+.text-grey {
+	color: #ccc
+}
+
+.bk-primary {
+	background-color: #2d6ca2;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-primary a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-success {
+	background-color: #419641;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-success a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-success-light {
+	background-color: #dff0d8;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-success-light a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-info {
+	background-color: #2aabd2;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-info a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-info-light {
+	background-color: d9edf7;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-info-light a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-warning {
+	background-color: #eb9316;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-warning a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-danger {
+	background-color: #c12e2a;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-danger a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-danger-light {
+	background-color: #f2dede;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-danger-light a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-link {
+	background-color: #428bca;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-link a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-meta {
+	background-color: #999;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-meta a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-inverse {
+	background-color: #333;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-inverse a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+.bk-purple {
+	background-color: purple;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+.bk-purple a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none
+}
+
+#formContainer form label:after {
+	content: ' ';
+	clear: both;
+	display: table
+}
+
+body {
+	background: url(img/s1.jpg) center center;
+	background-size: cover
+}
+
+html, body {
+	height: 100%
+}
+
+#formContainer {
+	background: rgba(255, 255, 255, 0.7);
+	box-size: border-box;
+	position: absolute;
+	top: 50%;
+	margin-top: -125px;
+	-webkit-animation: dropdown .3s 1 ease;
+	left: 50%;
+	padding: 20px 30px;
+	margin-left: -210px
+}
+
+#formContainer.qrcodeOpened {
+	margin-top: -250px
+}
+
+#formContainer form {
+	width: 360px
+}
+
+#formContainer form h2 {
+	background: url(img/logo-v2.png) 0 center no-repeat;
+	padding-left: 30px
+}
+
+#formContainer form label {
+	display: block
+}
+
+#formContainer form label i {
+	width: 30px;
+	float: left;
+	line-height: 35px
+}
+
+#formContainer form label input.form-control {
+	float: left;
+	width: 330px
+}
+
+#formContainer form label.remember {
+	cursor: pointer
+}
+
+#qrcode {
+	float: right;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	font-size: 14px
+}
+
+#qrcode:hover {
+	color: #2d6ca2
+}
+
+#qrcode.active {
+	color: #2d6ca2
+}
+
+#qrcodeWrapper {
+	display: none;
+	padding-bottom: 15px
+}
+
+#qrcodeWrapper img {
+	display: block;
+	margin: 0 auto
+}
+
+@
+-webkit-keyframes dropdown { 0%{
+	top: -250px
+}
+
+100%{
+top
+:
+60px
+}
+}
+@media ( max-width : 420px) {
+	#qrcode {
+		display: none
+	}
+	#formContainer {
+		position: static;
+		background: none;
+		margin-left: 0;
+		margin-top: 10px
+	}
+	#formContainer form {
+		width: auto
+	}
+	#formContainer form label {
+		padding-top: 15px
+	}
+	#formContainer form label i {
+		display: none
+	}
+	#formContainer form label input.form-control {
+		width: 100%;
+		border-radius: 0;
+		background: #fff
+	}
+}

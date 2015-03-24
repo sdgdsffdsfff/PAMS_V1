@@ -1,0 +1,44 @@
+/*portal page*/
+h2.collapsable {background:url(images/line2.gif) 0 center repeat-x;height:25px;line-height:25px;border:0;padding:0;margin:0;}
+h2.chover {background-image:url(images/line.gif);}
+h2 .title,h2 .t {font-size:14px;color:#666;}
+h2.collapsable .t {display:inline-block;background:#fff url(images/collapse.gif) 5px 0 no-repeat;font-size:14px;padding-right:5px;height:25px;line-height:25px;padding-left:20px;cursor:pointer;color:#777;}
+
+h2.blue {background-image:url(images/line-blue.gif) }
+h2.blue .t {color:#06c;font-weight:700;}
+
+div.portalPage h2.collapsable {cursor:move;}
+div#homepage h2.collapsable {cursor:move;}
+
+h2.collapsable .thover {background-position:5px -25px;color:#555;}
+h2.closed .t {background-position:5px -50px;}
+h2.closed .thover {background-position:5px -75px;color:#555;}
+
+ul.portal {margin:10px;margin-left:40px;}
+ul.portal  li {display:inline-block;margin-right:40px;*display:inline;*zoom:1;padding-top:8px;border:solid 1px #fff;border-radius:6px;}
+ul.portal  li.ready {background:url(images/tick-g.gif) right top no-repeat;}
+
+/*
+ul.portal  li:hover,ul.portal  li.hover {border-color:#396;}
+*/
+
+ul.portal  li a .g {width:68px;height:66px;background: url(img/portal-icons-bk.png) 0 0 no-repeat;display:block; cursor:pointer;margin-left:16px;}
+ul.portal  li a .t {display:block;text-align:center;height:25px;line-height:25px;*display:inline;*zoom:1;width:100px;cursor:pointer;white-space:nowrap;overflow:hidden;color:#000;}
+/*
+ul.portal  li a:hover .t {color:#21759b;}
+ul.portal  li a:hover .g,ul.portal  li a.hover .g {background-position: -68px 0;}
+*/
+/*
+ul.portal  li.hover {position:relative;top:-1px;left:-1px;}
+*/
+ul.portal  li.hover a .t {color:#21759b;}
+ul.portal  li.hover a .g {background-position: -68px 0;}
+
+ul.portal  li a .g .i {background:transparent url(img/icons.png) 0 0 no-repeat;;width:68px;height:66px;display:block;_background-image:url(images/icons.gif);}
+
+/*icons  */
+ul.portal  li a .g  span.ic_unreadmessages {background-position:-68px 0;}/*未读消息*/
+ul.portal  li a .g  span.ic_allmessages {background-position:-136px 0;}/*已收消息*/
+ul.portal  li a .g  span.ic_sentmessages {background-position:-204px 0;}/*已发消息*/
+
+ul.portal  li a .g  span.ic_projlist {background-position: -340px -198px;} /*计划*/

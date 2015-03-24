@@ -1,0 +1,60 @@
+.slider {
+	vertical-align: middle; display: inline-block; position: relative;
+}
+.slider-horizontal.slider {
+	width: 210px; height: 20px;
+}
+.slider-horizontal.slider .slider-track {
+	left: 0px; top: 50%; width: 100%; height: 10px; margin-top: -5px;
+}
+.slider-horizontal.slider .slider-selection {
+	top: 0px; height: 100%; bottom: 0px;
+}
+.slider-horizontal.slider .slider-handle {
+	margin-top: -5px; margin-left: -10px;
+}
+.slider-horizontal.slider .triangle.slider-handle {
+	border-width: 0px 10px 10px; width: 0px; height: 0px; margin-top: 0px; border-bottom-color: rgb(4, 128, 190);
+}
+.slider-vertical.slider {
+	width: 20px; height: 210px;
+}
+.slider-vertical.slider .slider-track {
+	left: 50%; top: 0px; width: 10px; height: 100%; margin-left: -5px;
+}
+.slider-vertical.slider .slider-selection {
+	left: 0px; top: 0px; width: 100%; bottom: 0px;
+}
+.slider-vertical.slider .slider-handle {
+	margin-top: -10px; margin-left: -5px;
+}
+.slider-vertical.slider .triangle.slider-handle {
+	border-width: 10px 0px 10px 10px; width: 1px; height: 1px; margin-left: 0px; border-left-color: rgb(4, 128, 190);
+}
+.slider-disabled.slider .slider-handle {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdfdfdf', endColorstr='#ffbebebe', GradientType=0); background-repeat: repeat-x;
+}
+.slider-disabled.slider .slider-track {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe5e5e5', endColorstr='#ffe9e9e9', GradientType=0); cursor: not-allowed; background-repeat: repeat-x;
+}
+.slider input {
+	display: none;
+}
+.slider .tooltip-inner {
+	white-space: nowrap;
+}
+.slider-track {
+	border-radius: 4px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0); position: absolute; cursor: pointer; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1); background-repeat: repeat-x; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.slider-selection {
+	border-radius: 4px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0); position: absolute; box-sizing: border-box; box-shadow: inset 0px -1px 0px rgba(0,0,0,0.15); background-repeat: repeat-x; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+.slider-handle {
+	border: 0px solid transparent; width: 20px; height: 20px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0); position: absolute; opacity: 0.8; box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2), 0px 1px 2px rgba(0,0,0,0.05); background-repeat: repeat-x; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+}
+.round.slider-handle {
+	border-radius: 50%;
+}
+.triangle.slider-handle {
+	
+}
