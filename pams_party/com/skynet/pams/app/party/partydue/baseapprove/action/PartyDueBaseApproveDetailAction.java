@@ -23,7 +23,7 @@ import com.skynet.pams.base.pojo.PartyDueUseSuggestDetail;
 
 @IocBean
 @At("/party/partydue/research/basedetail")
-public class PartyDueBaseDetailAction  extends BaseAction {
+public class PartyDueBaseApproveDetailAction  extends BaseAction {
 	
 	@Inject
 	private PartyDueUseSuggestService partydueusesuggestService;

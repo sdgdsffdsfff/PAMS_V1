@@ -29,8 +29,8 @@ import com.skynet.pams.base.pojo.PartyDueUseSuggest;
 import com.skynet.pams.base.pojo.Plan;
 
 @IocBean
-@At("/party/partydue/research/base")
-public class PartyDueBaseAction extends BaseAction {
+@At("/party/partydue/research/baseapprove")
+public class PartyDueBaseApproveAction extends BaseAction {
 
 	@Inject
 	private PartyDueUseSuggestService partydueusesuggestService;
