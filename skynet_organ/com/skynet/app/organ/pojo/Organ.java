@@ -1,5 +1,6 @@
 package com.skynet.app.organ.pojo;
 
+import org.nutz.dao.entity.annotation.ColDefine;
 import org.nutz.dao.entity.annotation.Table;
 
 import com.skynet.framework.pojo.IdEntity;
@@ -13,6 +14,7 @@ public class Organ extends IdEntity
 	
 	private String shortname; // 机构部门简称
 
+	@ColDefine(width = 500)
 	private String allname; // 机构部门完整名称
 
 	private String parentorganid; // 上级标识
